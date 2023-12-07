@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Inter", "Roboto", "Arial", sans-serif;
+}
+
+header {
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+
+header .container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a, .nav-list a {
+    text-transform: uppercase;
+}
+
+.logo a {
+    color: #F5222D;
+}
+
+header .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+header .nav-list a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+}
