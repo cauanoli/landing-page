@@ -115,7 +115,7 @@ a.button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     gap: 64px;
 }
 
@@ -174,4 +174,46 @@ a.button {
 
 .down-button {
     margin: 0 auto;
+}
+
+#motivation {
+    min-height: 100vh;
+    background-color: #F5222D;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.motivation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    flex: 1;
+}
+
+#motivation h2 {
+    font-size: 80px;
+    padding: 0;
+    text-align: center;
+}
+
+#motivation q {
+    font-size: 32px;
+    max-width: 60%;
+    text-align: right;
+}
+
+#motivation q span {
+    font-weight: bold;
+    display: block;
+}
+
+#motivation .down-button {
+    color: white;
 }
