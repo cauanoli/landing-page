@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -19,7 +20,7 @@ header {
 }
 
 
-header .container {
+header .container, #hero .container {
     margin: 0 auto;
     width: 80%;
     display: flex;
@@ -54,4 +55,56 @@ header .nav-list a {
     color: #000000;
     font-size: 16px;
     font-weight: 700;
+}
+
+#hero {
+    background-color: white;
+}
+
+#hero .container {
+    gap: 100px;
+    height: calc(100vh - 60px);
+}
+
+#hero img {
+    width: 400px;
+    height: auto;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-content h1 {
+    color: #F5222D;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content {
+    font-size: 22px;
+}
+
+a.button {
+    padding: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
+    width: fit-content;
+    margin-top: 48px;
+}
+
+.primary  {
+    color: white;
+    background-color: #F5222D;
+}
+
+.inverted {
+    background-color: white;
+    color: #F5222D;
 }
