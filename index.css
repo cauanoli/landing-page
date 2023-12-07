@@ -94,11 +94,14 @@ header .nav-list a {
 a.button {
     padding: 16px;
     text-transform: capitalize;
+    max-height: 80px;
     font-weight: 700;
     font-size: 24px;
     display: block;
-    width: fit-content;
+    width: 200px;
     margin-top: 48px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .primary  {
@@ -192,7 +195,7 @@ a.button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     flex: 1;
 }
@@ -216,4 +219,35 @@ a.button {
 
 #motivation .down-button {
     color: white;
+}
+
+
+#start-learning {
+    background-color: white;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start-learning .container {
+    max-width: 80%;
+    display: flex;
+    padding: 80px;
+    gap: 64px;
+    background-color: #F5222D;
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-learning a.button {
+    padding: 24px;
+    width: max-content;
+}
+
+#start-learning h2 {
+    font-size: 56px;
+    margin: 0;
 }
