@@ -1,265 +1,270 @@
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: "Inter", "Roboto", "Arial", sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Inter", "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    height: 60px;
-    background-color: white;
-    border-bottom: 1px solid #CDCDCD;
+  min-height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #cdcdcd;
 }
 
-
-header .container, #hero .container {
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header .container,
+#hero .container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: 900;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.logo a, .nav-list a {
-    text-transform: uppercase;
+.logo a,
+.nav-list a {
+  text-transform: uppercase;
 }
 
 .logo a {
-    color: #F5222D;
+  color: #f5222d;
 }
 
 header .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 24px;
+  list-style: none;
+  display: flex;
+  gap: 24px;
 }
 
 header .nav-list a {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 #hero {
-    background-color: white;
+  background-color: white;
 }
 
 #hero .container {
-    gap: 100px;
-    height: calc(100vh - 60px);
+  gap: 100px;
+  min-height: calc(100vh - 60px);
+  padding: 12px;
 }
 
 #hero img {
-    width: 400px;
-    height: auto;
+  width: 400px;
+  min-height: auto;
 }
 
 .hero-image {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .hero-content h1 {
-    color: #F5222D;
-    font-size: 80px;
-    font-weight: 900;
-    margin: 0;
-    padding: 0;
+  color: #f5222d;
+  font-size: 80px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-content {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 a.button {
-    padding: 16px;
-    text-transform: capitalize;
-    max-height: 80px;
-    font-weight: 700;
-    font-size: 24px;
-    display: block;
-    width: 200px;
-    margin-top: 48px;
-    text-align: center;
-    white-space: nowrap;
+  padding: 16px;
+  text-transform: capitalize;
+  max-height: 80px;
+  font-weight: 700;
+  font-size: 24px;
+  display: block;
+  width: 200px;
+  margin-top: 48px;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.primary  {
-    color: white;
-    background-color: #F5222D;
+.primary {
+  color: white;
+  background-color: #f5222d;
 }
 
 .inverted {
-    background-color: white;
-    color: #F5222D;
+  background-color: white;
+  color: #f5222d;
 }
 
 #resources {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    gap: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  gap: 64px;
 }
 
 #resources h2 {
-    background-color: #F5222D;
-    color: white;
+  background-color: #f5222d;
+  color: white;
+  width: 100%;
 
-    text-align: center;
-    font-size: 48px;
-    padding: 12px;
-    margin: 0;
+  text-align: center;
+  font-size: 48px;
+  padding: 12px;
+  margin: 0;
 }
 
 .cards {
-    display: flex;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  max-width: calc(100vw - 48px);
 }
 
 .card a {
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding: 32px;
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
 }
 
 .card a:hover {
-    outline: 4px solid #000000;
+  outline: 4px solid #000000;
 }
 
 .card a h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .card a p {
-    margin: 0;
+  margin: 0;
 }
 
 .card.secondary {
-    border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
 }
 
 .card.primary a {
-    color: white;
+  color: white;
 }
 
 .card.secondary a {
-    color: #000000;
+  color: #000000;
 }
 
 .down-button {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #motivation {
-    min-height: 100vh;
-    background-color: #F5222D;
-    color: white;
+  min-height: 100vh;
+  background-color: #f5222d;
+  color: white;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .motivation-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
 }
 
 #motivation h2 {
-    font-size: 80px;
-    padding: 0;
-    text-align: center;
+  font-size: 80px;
+  padding: 0;
+  text-align: center;
 }
 
 #motivation q {
-    font-size: 32px;
-    max-width: 60%;
-    text-align: right;
+  font-size: 32px;
+  max-width: 60%;
+  text-align: right;
 }
 
 #motivation q span {
-    font-weight: bold;
-    display: block;
+  font-weight: bold;
+  display: block;
 }
 
 #motivation .down-button {
-    color: white;
+  color: white;
 }
 
-
 #start-learning {
-    background-color: white;
-    height: calc(100vh - 60px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: white;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #start-learning .container {
-    max-width: 80%;
-    display: flex;
-    padding: 80px;
-    gap: 64px;
-    background-color: #F5222D;
-    color: white;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
+  max-width: 80%;
+  display: flex;
+  padding: 80px;
+  gap: 64px;
+  background-color: #f5222d;
+  color: white;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 #start-learning a.button {
-    padding: 24px;
-    width: max-content;
+  padding: 24px;
+  width: max-content;
 }
 
 #start-learning h2 {
-    font-size: 56px;
-    margin: 0;
+  font-size: 56px;
+  margin: 0;
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #CDCDCD;
-    font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #cdcdcd;
+  font-weight: 700;
 }
 
 footer a {
-    color: #F5222D;
-    text-decoration: underline;
+  color: #f5222d;
+  text-decoration: underline;
 }
