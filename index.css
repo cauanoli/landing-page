@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  height: 60px;
+  padding: 0.25rem;
   background-color: white;
   border-bottom: 1px solid #cdcdcd;
 }
@@ -61,6 +61,7 @@ header .nav-list {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: end;
 }
 
 header nav {
